@@ -28,6 +28,7 @@ begin
   SDL_RenderClear(renderer);
   SDL_RenderPresent(renderer);
 
+  WriteLn('Start main loop...');
   running := True;
   while running = True do
   begin
@@ -35,9 +36,14 @@ begin
     begin
       case event^.type_ of
         SDL_QUITEV: begin
-             running := False;
+             running := False;      
         end;
       end;
+      if event^.type_ = SDL_KEYDOWN Then
+      begin
+          WriteLn('key pressed');
+          if event^.key.keysym.sym = SDLK_ESCAPE Then running := False;
+      end; // SDL_KEYDOWN events
     end; // SDL_PollEvent
 
   end; // Main Loop

@@ -9,23 +9,47 @@
         <Filename Value="meSDL2.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="9" Y="4"/>
+        <CursorPos X="5" Y="9"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:\programming-tests\Lazarus\SDL2\units\sdl.inc"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="5"/>
         <CursorPos X="11" Y="70"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="SDL2\units\sdlevents.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="544"/>
+        <CursorPos X="22" Y="573"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory>
+    <JumpHistory HistoryIndex="4">
       <Position>
         <Filename Value="meSDL2.lpr"/>
         <Caret Line="24" Column="51"/>
+      </Position>
+      <Position>
+        <Filename Value="meSDL2.lpr"/>
+        <Caret Line="23" Column="112"/>
+      </Position>
+      <Position>
+        <Filename Value="meSDL2.lpr"/>
+        <Caret Line="37" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="meSDL2.lpr"/>
+        <Caret Line="43" Column="26"/>
+      </Position>
+      <Position>
+        <Filename Value="meSDL2.lpr"/>
+        <Caret Line="9" Column="5"/>
       </Position>
     </JumpHistory>
     <RunParams>
