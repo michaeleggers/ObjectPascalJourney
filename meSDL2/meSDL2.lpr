@@ -1,14 +1,14 @@
 program meSDL2;
 
 uses
-    sdl2;
+    sdl2, entity;
 
 var
     window : PSDL_Window;
-    renderer: PSDL_Renderer;
-    event: PSDL_Event;
-    running: Boolean;
-
+    renderer : PSDL_Renderer;
+    event : PSDL_Event;
+    running : Boolean;
+    player : TEntity;
 
 begin
   SDL_Init(SDL_INIT_EVERYTHING);
@@ -20,7 +20,10 @@ begin
                              0);
 
   renderer := SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+  
   new(event);
+
+  player := CreateEntity(20.34, 340.3, 'player.png');
 
   SDL_ShowWindow(window);
 
