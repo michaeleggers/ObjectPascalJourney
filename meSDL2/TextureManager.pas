@@ -1,11 +1,9 @@
 unit TextureManager;
 
-
 interface
 	uses Graphics, sdl2;
 
 	function LoadTexture(TextureFile : string) : PSDL_Texture;
-
 
 implementation
 	function LoadTexture(TextureFile : string) : PSDL_Texture;
