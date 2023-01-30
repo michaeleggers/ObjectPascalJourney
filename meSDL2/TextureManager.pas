@@ -11,7 +11,14 @@ implementation
 		ImageData : TPicture;
 	begin
 		ImageData.Create;
-		ImageData.LoadFromFile('Test.png');
+		try	
+			ImageData.LoadFromFile('Test.png');
+		except
+			begin
+				WriteLn('Could not load file Test.png');
+				// Load default texture or something...
+			end;
+		end;
 		WriteLn('LoadTexture: loading file ', TextureFile);
 
 		LoadTexture := nil;
